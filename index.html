@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Model Simulator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="canvas-container"></div>
+
+    <div id="gui-container">
+      <h3>3D Model Of Xolbor</h3>
+      <button onclick="rotateModel('left')">Rotate Left(Arrow Left)</button>
+      <button onclick="rotateModel('right')">Rotate Right(Arrow Right)</button>
+
+      <br /><br />
+      <div class="container">
+        <button id="showTextButton">Show Information About Xolbor</button>
+        <p id="text" class="hidden">
+          Xolbor is a mysterious planet covered by a thick ice crust, beneath
+          which lies a deep ocean ranging from 10 to 30 kilometers. This crust
+          protects the ocean from cold and radiation, while active geological
+          processes like volcanism and hydrothermal vents fuel a unique
+          biosphere. Energy Source: The primary energy comes from chemical
+          compounds, such as hydrogen sulfide and methane, emitted by
+          hydrothermal vents. Chemosynthetic bacteria oxidize sulfur to create
+          organic matter, forming the basis of the food web. Geological
+          Features: Xolbor features hydrothermal vents, active volcanoes, and
+          underwater hot springs, enriching the water with minerals that support
+          diverse microbial communities. Biosphere: The ecosystem includes
+          chemosynthetic bacteria and complex organisms like tube worms and
+          mollusks, engaging in symbiotic relationships for survival. Ecosystem
+          Dynamics: Chemosynthesis fosters intricate interactions among
+          organisms, maintaining carbon and nutrient cycles and allowing life to
+          thrive without sunlight.
+        </p>
+      </div>
+    </div>
+
+    <div id="gui-container2">
+      <br /><br />
+      <button onclick="zoomModel('in')">Zoom In(Arrow Up)</button>
+      <button onclick="zoomModel('out')">Zoom Out(Arrow Down)</button>
+      <br />
+    </div>
+
+    <audio id="background-sound" autoplay loop>
+      <source src="space-hum.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
