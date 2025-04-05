@@ -1,2 +1,2 @@
 # Nasa-Space-Apps-Challenge
-site
+website using js, css & html for nasa space apps challenge in oct 2024
